@@ -130,7 +130,7 @@
     },
   },
   created(){
-const socket = io('https://feedbackflask.vercel.app/');
+const socket = io('https://little-violet-5641.fly.dev/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
