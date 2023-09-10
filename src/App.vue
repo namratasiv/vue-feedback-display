@@ -5,23 +5,23 @@
     <section class="graph-two">
 
     
-    <h2>Video Platform Roadshow Stats</h2>
+    <h2>Video Platform Roadshow Stats 🎬</h2>
   <div class="bar-graph-container">
     <div class="bar-container">
      <div class="html" v-bind:style="{ width: update3 + '%' }">
-       <div style = "font-size:35px;">😁 {{ update3 }}</div>
+       <h1>😁 {{ update3 }}</h1>
       </div>
     </div>
     
    <div class="bar-container">
      <div class="css" v-bind:style="{ width: update2 + '%' }">
-      <div style = "font-size:35px;">😶 {{ update2 }}</div>
+      <h1>😶 {{ update2 }}</h1>
       </div>
     </div>
     
   	<div class="bar-container">
      <div class="js" v-bind:style="{ width: update1 + '%' }">
-      <div style = "font-size:35px;">🙁 {{ update1 }}</div>
+      <h1>🙁 {{ update1 }}</h1>
       </div>
     </div>
      
@@ -90,7 +90,7 @@
     },
   },
   created(){
-const socket = io('https://1f1d-2406-7400-bd-447e-b825-383d-36c3-bdb7.ngrok-free.app/');
+const socket = io('http://127.0.0.1:8080/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
