@@ -352,6 +352,7 @@ div[class*="-stats"] span:hover {
 
 .bar-container {
  	background-color: #d6d6d6; 
+  margin: 10px;
 }
 
 .html {
