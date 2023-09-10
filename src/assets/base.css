@@ -313,7 +313,7 @@ div[class*="-stats"] span:hover {
 .bar-graph-container {
   border-left: 4px solid white;
   /* border-bottom: 4px solid #000;  */
-  width: 60%;
+  width: 90%;
   overflow: hidden;
 
 }
