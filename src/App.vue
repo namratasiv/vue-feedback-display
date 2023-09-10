@@ -90,7 +90,7 @@
     },
   },
   created(){
-const socket = io('http://127.0.0.1:8080/');
+const socket = io('https://1f1d-2406-7400-bd-447e-b825-383d-36c3-bdb7.ngrok-free.app/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
