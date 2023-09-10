@@ -54,7 +54,7 @@
 *::before,
 *::after {
   box-sizing:border-box;
-  margin: 0;
+  /* margin: 0; */
   font-weight: normal;
 }
 
@@ -307,4 +307,91 @@ div[class*="-stats"] span:hover {
   0% { transform: scaleY(0.01); }
   75% { transform: scaleY(1.1); }
   100% { transform: scaleY(1); }
+}
+
+
+.bar-graph-container {
+  border-left: 4px solid white;
+  /* border-bottom: 4px solid #000;  */
+  width: 60%;
+  overflow: hidden;
+
+}
+
+.bar-graph-container p {
+  padding: 20px;
+  color: #fff;
+  size: 15px;
+}
+
+@-webkit-keyframes slide-left {
+   0% {
+     -webkit-transform: translateX(-200%);
+  }
+  70% {
+    -webkit-transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-200%);
+  }
+  
+  70% {
+    -webkit-transform: translateX(2%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+.bar-container {
+ 	background-color: #d6d6d6; 
+}
+
+.html {
+  /* width: 85%; */
+  background-color: #3bb273;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  height: 57px;
+  
+}
+
+.css {
+  
+  background-color: #ff6700;
+  animation: slide-left 1s ease-in-out 1s both;
+ -webkit-animation: slide-left 1s ease-in-out 1s both;
+   animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  height: 57px;
+  /* position: relative; */
+}
+
+.js {
+  
+  background-color: #82b7d7;
+  animation: slide-left 1s ease-in-out 1s both;
+  -webkit-animation: slide-left 1s ease-in-out 1s both;
+   animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  height: 57px;
+}
+
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+  margin: 10px !important;
+  position: absolute;
+  top: 0;
+  left:0;
 }
