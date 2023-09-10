@@ -9,19 +9,19 @@
   <div class="bar-graph-container">
     <div class="bar-container">
      <div class="html" v-bind:style="{ width: update3 + '%' }">
-       <h1>😁 {{ update3 }}</h1>
+       <div style = "font-size:35px;">😁 {{ update3 }}</div>
       </div>
     </div>
     
    <div class="bar-container">
      <div class="css" v-bind:style="{ width: update2 + '%' }">
-      <h1>😶 {{ update2 }}</h1>
+      <div style = "font-size:35px;">😶 {{ update2 }}</div>
       </div>
     </div>
     
   	<div class="bar-container">
      <div class="js" v-bind:style="{ width: update1 + '%' }">
-      <h1>🙁 {{ update1 }}</h1>
+      <div style = "font-size:35px;">🙁 {{ update1 }}</div>
       </div>
     </div>
      
