@@ -118,7 +118,7 @@ body {
 
 footer{
   margin-bottom: 200px;
-  align-items: end;
+z-index: -1;
 }
 
 .panel {
@@ -349,7 +349,7 @@ div[class*="-stats"] span:hover {
 
 .html {
   /* width: 85%; */
-  background-color: #3bb273;
+  background-color: #38b000;
   animation: slide-left 0.9s ease-in-out 1s both;
   -webkit-animation: slide-left 0.9s ease-in-out 1s both;
   animation-delay: 0.1s;
@@ -371,7 +371,7 @@ div[class*="-stats"] span:hover {
 
 .js {
   
-  background-color: #82b7d7;
+  background-color: #9bf6ff;
   animation: slide-left 1s ease-in-out 1s both;
   -webkit-animation: slide-left 1s ease-in-out 1s both;
    animation-delay: 0.3s;
