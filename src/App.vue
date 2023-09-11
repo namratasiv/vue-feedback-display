@@ -5,7 +5,7 @@
     <section class="graph-two">
 
     
-    <h2>Video Platform Roadshow Stats 🎬</h2>
+    <h1 style="position:relative; left: 250px;">Video Platform Roadshow Stats 🎬</h1>
   <div class="bar-graph-container">
     <div class="bar-container">
      <div class="html" v-bind:style="{ width: update3 + '%' }">
@@ -90,7 +90,7 @@
     },
   },
   created(){
-const socket = io('https://polite-dinosaur-legally.ngrok-free.app/');
+const socket = io('http://127.0.0.1:8080/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
