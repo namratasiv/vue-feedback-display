@@ -118,7 +118,7 @@ body {
 
 footer{
   margin-bottom: 200px;
-z-index: -1;
+z-index: -2;
 }
 
 .panel {
@@ -305,7 +305,7 @@ div[class*="-stats"] span:hover {
 .bar-graph-container {
   border-left: 4px solid white;
   /* border-bottom: 4px solid #000;  */
-  width: 90%;
+  width: 1200px;
   overflow: hidden;
 
 }
