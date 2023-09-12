@@ -1,64 +1,6 @@
 
 <template>
-  <body style = "margin-left: 10px !important;">
-    <div class="container">
-    <section class="graph-two">
-
-    
-    <h1 style="position:relative; left: 250px;">Video Platform Roadshow Stats 🎬</h1>
-  <div class="bar-graph-container">
-    <div class="bar-container">
-     <div class="html" v-bind:style="{ width: update3 + '%' }">
-       <h1>😁 {{ update3 }}</h1>
-      </div>
-    </div>
-    
-   <div class="bar-container">
-     <div class="css" v-bind:style="{ width: update2 + '%' }">
-      <h1>😶 {{ update2 }}</h1>
-      </div>
-    </div>
-    
-  	<div class="bar-container">
-     <div class="js" v-bind:style="{ width: update1 + '%' }">
-      <h1>🙁 {{ update1 }}</h1>
-      </div>
-    </div>
-     
-
-   </div>
-  </section>
-</div>
-</body>
-<footer>
-
-  <div  v-if="dataa" id = "page1">
-    <video id = "vid1" class="fadeinout" width="500" height="500" autoplay >
-  <source src="./assets/SAD.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-    
-  </div>
-  <div  v-if="data2" id = "page2">
-    <!-- <h1>Hello 2!</h1> -->
-    <!-- <h1>{{ status }}</h1> -->
-    <video id = "vid2" class="fadeinout" width="500" height="500" autoplay >
-  <source src="./assets/neutraL.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-    
-  </div>
-  <div  v-if="data3" id = "page3">
-    <!-- <h1>Hello 3!</h1> -->
-    <!-- <h1>{{ status }}</h1> -->
-    <video id = "vid3" class="fadeinout" width="500" height="500" autoplay >
-  <source src="./assets/smile.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-    
-  </div>
-
-</footer>
+  <h1> We'll be back 🤓 </h1>
 </template>
 
 
