@@ -31,28 +31,27 @@
 </div>
 </body>
 <footer>
-  <div  v-if="dataa" id = "page">
-    <!-- <h1>Hello 1!</h1> -->
-    <!-- <h1>{{ status }}</h1> -->
-    <video id = "vid" class="fadeinout" width="500" height="500" autoplay >
+
+  <div  v-if="dataa" id = "page1">
+    <video id = "vid1" class="fadeinout" width="500" height="500" autoplay >
   <source src="./assets/SAD.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
     
   </div>
-  <div  v-if="data2" id = "page">
+  <div  v-if="data2" id = "page2">
     <!-- <h1>Hello 2!</h1> -->
     <!-- <h1>{{ status }}</h1> -->
-    <video id = "vid" class="fadeinout" width="500" height="500" autoplay >
+    <video id = "vid2" class="fadeinout" width="500" height="500" autoplay >
   <source src="./assets/neutraL.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
     
   </div>
-  <div  v-if="data3" id = "page">
+  <div  v-if="data3" id = "page3">
     <!-- <h1>Hello 3!</h1> -->
     <!-- <h1>{{ status }}</h1> -->
-    <video id = "vid" class="fadeinout" width="500" height="500" autoplay >
+    <video id = "vid3" class="fadeinout" width="500" height="500" autoplay >
   <source src="./assets/smile.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -90,7 +89,7 @@
     },
   },
   created(){
-const socket = io('https://polite-dinosaur-legally.ngrok-free.app/');
+const socket = io('http://127.0.0.1:8080/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
@@ -109,20 +108,24 @@ socket.on('connect', function () {
       setTimeout(() => {
         this.dataa = false;
       }, 5000);
-      } else if(data.message == "2"){
-        this.data2=true;
-        setTimeout(() => {
-        this.data2 = false;
-      }, 5000);
-      } else if(data.message == "3"){
-        this.data3=true;
-        setTimeout(() => {
-        this.data3 = false;
-      }, 5000);
       } else{
         console.log("Else Block Socket Message is:", data.message)
       }
       
+    });
+    socket.on('insert2', (data) => {
+      console.log("inside insert 2")
+        this.data2=true;
+        setTimeout(() => {
+        this.data2 = false;
+      }, 5000);
+    });
+    socket.on('insert3', (data) => {
+      console.log("inside insert 2")
+        this.data3=true;
+        setTimeout(() => {
+        this.data3 = false;
+      }, 5000);
     });
 
     socket.on('update', (data) => {
