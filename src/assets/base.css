@@ -110,15 +110,32 @@ body {
   }
 }
 
-#page{
+#page1{
   
-  align-items: center;
+  /* align-items: center;
   display: flex;
+  position: relative;
+  left: 50px; */
+  z-index: -2;
+}
+#page2{
+  
+  /* align-items: center;
+  display: flex; */
+  z-index: -2;
+}
+#page3{
+  
+  /* align-items: center;
+  display: flex; */
+  z-index: -2;
 }
 
 footer{
   margin-bottom: 200px;
 z-index: -2;
+display: grid;
+/* grid-template-columns: auto auto auto; */
 }
 
 .panel {
