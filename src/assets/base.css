@@ -63,19 +63,28 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: white;
+  background: #010320;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-image: url("1.png");
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
   font-family: 'Fira Code', monospace;
-  font-size: x-large;
+  /* font-size: xx-large; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-left: 10px !important;
+  /* margin-left: 10px !important; */
+  padding: 0%;
+  z-index: -1;
 }
+h1{
+  font-size: 3em;
+}
+
 .fadeinout
 {
   animation: fadeinout 4s ;
@@ -116,6 +125,7 @@ body {
   display: flex;
   position: relative;
   left: 50px; */
+  
   z-index: -2;
 }
 #page2{
@@ -132,9 +142,17 @@ body {
 }
 
 footer{
-  margin-bottom: 200px;
+  display: grid;
+  justify-content:space-evenly;
+  grid-template-columns: 500px 500px 500px; /*Make the grid smaller than the container*/
+  /* gap: 10px;
+  background-color: #2196F3; */
+  padding: 20px;
 z-index: -2;
-display: grid;
+margin-top: 340px;
+margin-left: 30px;
+top:100px;
+/* display: grid; */
 /* grid-template-columns: auto auto auto; */
 }
 
@@ -320,7 +338,7 @@ div[class*="-stats"] span:hover {
 
 
 .bar-graph-container {
-  border-left: 4px solid white;
+  /* border-left: 4px solid white; */
   /* border-bottom: 4px solid #000;  */
   width: 1200px;
   overflow: hidden;
@@ -371,7 +389,7 @@ div[class*="-stats"] span:hover {
   -webkit-animation: slide-left 0.9s ease-in-out 1s both;
   animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
-  height: 57px;
+  height: 40px;
   
 }
 
@@ -382,7 +400,7 @@ div[class*="-stats"] span:hover {
  -webkit-animation: slide-left 1s ease-in-out 1s both;
    animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
-  height: 57px;
+  height: 40px;
   /* position: relative; */
 }
 
@@ -393,7 +411,7 @@ div[class*="-stats"] span:hover {
   -webkit-animation: slide-left 1s ease-in-out 1s both;
    animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
-  height: 57px;
+  height: 40px;
 }
 
 
@@ -402,6 +420,8 @@ div[class*="-stats"] span:hover {
   margin: 0 auto;
   margin: 10px !important;
   position: absolute;
-  top: 0;
+  top: 150px;
   left:0;
+  margin-left: 270px !important;
 }
+
