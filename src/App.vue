@@ -37,8 +37,8 @@
 <footer>
 
   <div v-if="dataa"  id = "page1">
-    <video id = "vid1" class="fadeinout" width="300" height="300" autoplay >
-  <source src="./assets/SAD.mov" type="video/mp4">
+    <video id = "vid1" class="fadeinout" width="300" src="./assets/SAD.mov" height="300" autoplay >
+ 
   Your browser does not support the video tag.
 </video>
 </div>
