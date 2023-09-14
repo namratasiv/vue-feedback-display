@@ -4,8 +4,8 @@
     <div class="container">
     <section class="graph-two">
 
-    
-    <h1 style="position:relative; left: 380px; top: 30px;">ROADSHOW FEEDBACK 🎬</h1>
+<!--     
+    <h1 style="position:relative; left: 60%; top: 30px;">ROADSHOW FEEDBACK 🎬</h1> -->
   <div class="bar-graph-container">
     
     <div class="bar-container">
@@ -37,8 +37,8 @@
 <footer>
 
   <div v-if="dataa"  id = "page1">
-    <video id = "vid1" class="fadeinout" width="500" height="500" autoplay >
- <source src="./assets/SAD.mp4" type="video/mp4">
+    <video id = "vid1" class="fadeinout"  width="500" height="500" autoplay >
+  <source src="./assets/SAD.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 </div>
@@ -94,7 +94,7 @@
     },
   },
   created(){
-const socket = io('https://polite-dinosaur-legally.ngrok-free.app/');
+const socket = io('http://127.0.0.1:8080/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
