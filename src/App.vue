@@ -94,7 +94,7 @@
     },
   },
   created(){
-const socket = io('http://127.0.0.1:8080/');
+const socket = io('https://polite-dinosaur-legally.ngrok-free.app/');
 console.log("new data came in!!!")
 
 socket.on('connect', function () {
